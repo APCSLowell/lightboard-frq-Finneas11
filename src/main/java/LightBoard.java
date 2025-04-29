@@ -24,7 +24,7 @@ public class LightBoard
 
 
 
-    }
+    
 
   /** Evaluates a light in row index row and column index col and returns a status
    *  as described in part (b).
@@ -35,8 +35,8 @@ public class LightBoard
    int numOn = 0;
 
     for ( int r = 0; r < lights.length; r ++ ) {
-    if (lights[r][col] {
-      numOn++ }
+    if (lights[r][col]) {
+      numOn++; }
     }
 
   if ( lights[row][col] && numOn % 2 == 0) {
@@ -50,12 +50,10 @@ public class LightBoard
     return lights[row][col]; 
     
 
+}
 
 
-
-
-    
-  }
+  
   public boolean[][] getLights()
   {
     return lights;
